@@ -1,13 +1,14 @@
 
 import { StyleSheet, View } from 'react-native';
 import Detalhe from './components/Detalhe';
+import carrinho from '../../mocks/carrinho'
 
 import Topo from './components/Topo';
 
 
 export default function Carrinho () {
     return <> 
-    <Topo/>
+    <Topo titulo={carrinho.topo.titulo}/>
     <View style={estilos.carrinho}>
     <Detalhe/> 
     </View>
